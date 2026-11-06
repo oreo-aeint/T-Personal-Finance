@@ -1,0 +1,6 @@
+{
+  "name": "T-Personal Finance Tracking",
+  "description": "Private, offline-first Japanese personal finance mobile app for foreign students and part-time workers in Japan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
