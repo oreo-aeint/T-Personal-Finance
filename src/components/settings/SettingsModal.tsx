@@ -446,7 +446,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         <div className="p-4 rounded-3xl bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200/80 dark:border-neutral-700/80 space-y-1.5 text-neutral-500 dark:text-neutral-400 text-[11px] leading-relaxed">
           <div className="flex items-center gap-1.5 text-neutral-700 dark:text-neutral-200 font-semibold mb-1">
             <Info size={14} />
-            <span>T-Personal Finance Tracking (NihonWallet)</span>
+            <span>T-Personal Finance</span>
           </div>
           <p>
             Designed exclusively for foreign students and part-time workers living in Japan.

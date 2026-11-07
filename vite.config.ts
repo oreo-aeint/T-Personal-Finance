@@ -14,8 +14,8 @@ export default defineConfig(() => {
         includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg'],
         manifest: {
           id: '/',
-          name: 'T-Personal Finance Tracking',
-          short_name: 'NihonWallet',
+          name: 'T-Personal Finance',
+          short_name: 'T-Finance',
           description: 'Private, offline-first Japanese personal finance mobile app for foreign students and part-time workers in Japan.',
           theme_color: '#10b981',
           background_color: '#ffffff',
