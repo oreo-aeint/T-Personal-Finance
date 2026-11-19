@@ -3,6 +3,7 @@
  * Guarantees 100% offline-first local storage on the iPhone/browser.
  */
 import initSqlJs, { Database, QueryExecResult } from 'sql.js';
+import sqlWasmUrl from 'sql.js/dist/sql-wasm.wasm?url';
 import { SCHEMA_SQL } from './schema';
 import { seedDatabase } from './seed';
 
@@ -107,7 +108,7 @@ export async function getDatabase(): Promise<Database> {
 
   initPromise = (async () => {
     const SQL = await initSqlJs({
-      locateFile: () => `https://sql.js.org/dist/sql-wasm.wasm`,
+      locateFile: () => sqlWasmUrl,
     });
 
     const savedBinary = await loadDatabaseFromIndexedDB();
@@ -241,7 +242,7 @@ export async function exportDatabaseBinary(): Promise<Uint8Array> {
  */
 export async function importDatabaseBinary(binary: Uint8Array): Promise<void> {
   const SQL = await initSqlJs({
-    locateFile: () => `https://sql.js.org/dist/sql-wasm.wasm`,
+    locateFile: () => sqlWasmUrl,
   });
   const newDb = new SQL.Database(binary);
   newDb.run("PRAGMA foreign_keys = ON;");
